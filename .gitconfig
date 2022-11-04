@@ -1,0 +1,18 @@
+[user]
+  name = kh
+  email = moltak@gmail.com
+
+[alias]
+  graph = log --graph --date-order -C -M --pretty=format:\"%C(blue)%h%C(reset) (%ar) [%an] %C(yellow)%d%Creset %s\" --all --date=short
+  l = !git graph | less -FXRS
+  h = !git graph -1 | less -FXRS
+  ls = log --graph -C -M --pretty=format:"%C(yellow)%h%Cgreen%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --all --date=short
+  ll = log --pretty=format:"%C(yellow)%h%Cgreen%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --all --numstat
+  ffs = flow feature start
+  fff = flow feature finish
+  
+[core]
+  editor = nvim
+
+[init]
+  defaultBranch = main
