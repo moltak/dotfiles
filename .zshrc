@@ -24,7 +24,6 @@ export HOMEBREW_NO_ENV_HINTS=FALSE
 alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
-export EDITOR="code"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -47,9 +46,3 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/engeng/Library/Caches/heroku/autocomplete/zsh_se
 # android
 export ANDROID_SDK="/Users/engeng/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin
-
-DB_USER=example-user
-DB_PASSWORD=secret
-DB_HOST=localhost
-DB_NAME=example-db
-PROFILE=kh
