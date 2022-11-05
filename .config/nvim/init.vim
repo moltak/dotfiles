@@ -64,6 +64,12 @@ Plug 'samodostal/image.nvim'
 Plug 'nvim-lua/plenary.nvim'
 call plug#end()
 
+" COC extension
+let g:coc_global_extensions = [
+            \ 'coc-ultisnips',
+            \ 'coc-explorer',
+            \]
+
 colorscheme gruvbox
 
 set nu

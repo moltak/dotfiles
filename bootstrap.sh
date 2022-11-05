@@ -18,11 +18,12 @@ brew tap homebrew/bundle
 brew bundle --file=$HOME/dotfiles/Brewfile
 
 # link
-ln -nfs $HOME/dotfiles/clojuredocs  $HOME/clojuredocs 
-ln -nfs $HOME/dotfiles/.config      $HOME/.config 
-ln -nfs $HOME/dotfiles/.gitconfig   $HOME/.gitconfig
-ln -nfs $HOME/dotfiles/.gitignore   $HOME/.gitignore
-ln -nfs $HOME/dotfiles/.zshrc       $HOME/.zshrc
-ln -nfs $HOME/dotfiles/.ctags.d     $HOME/.ctags.d
+ln -nfs $HOME/dotfiles/clojuredocs            $HOME/clojuredocs 
+ln -nfs $HOME/dotfiles/.config                $HOME/.config 
+ln -nfs $HOME/dotfiles/.gitconfig             $HOME/.gitconfig
+ln -nfs $HOME/dotfiles/.gitignore             $HOME/.gitignore
+ln -nfs $HOME/dotfiles/.zshrc                 $HOME/.zshrc
+ln -nfs $HOME/dotfiles/.ctags.d               $HOME/.ctags.d
+ln -nfs $HOME/dotfiles/.config/nvim/init.vim  $HOME/.vimrc
 
 source $HOME/.zshrc
