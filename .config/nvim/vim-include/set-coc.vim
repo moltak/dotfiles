@@ -7,6 +7,15 @@ let g:coc_global_extensions = [
             \ 'coc-explorer',
             \]
 
+" 팝업 메뉴가 보인다면 coc 자동완성
+" 커서 왼쪽에 공백 문자가 있다면 그냥 탭 키 입력
+" 그 외의 경우에는 UltiSnips 자동완성
+inoremap <silent><script><expr> <TAB>
+      \ coc#pum#visible()
+      \ ? coc#pum#confirm()
+      \ : <SID>check_back_space() ? "\<TAB>"
+      \ : "\<C-R>=UltiSnips#ExpandSnippet()<CR>"
+
 "** 메뉴 Color
 " https://github.com/neoclide/coc.nvim/pull/3862
 " https://www.ditig.com/256-colors-cheat-sheet

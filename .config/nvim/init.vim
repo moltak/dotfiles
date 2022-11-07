@@ -36,7 +36,7 @@ Plug 'mhinz/vim-startify'
 Plug 'luochen1990/rainbow'
 
 " snippet
-"Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 
 " tags
 Plug 'ludovicchabant/vim-gutentags'
@@ -102,8 +102,9 @@ nnoremap <silent> <F2>d :bd!<CR>
 " 현재 버퍼만 남기고 모두 닫기
 nnoremap <silent> <f2>o :%bd <BAR> e # <BAR> bd #<CR>
 
-nnoremap <F10>r :source ~/.vimrc<CR>
+nnoremap <F10>r :vs ~/.vimrc<CR>
 
+let g:python3_host_prog= '/opt/homebrew/bin/python3'
 
 " 편집한 값들은 한 단계 인덴트를 오른쪽으로 당겼음
 let g:sexp_mappings = {
