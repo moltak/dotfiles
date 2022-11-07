@@ -46,3 +46,9 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/engeng/Library/Caches/heroku/autocomplete/zsh_se
 # android
 export ANDROID_SDK="/Users/engeng/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+eval "$(rbenv init - zsh)"
