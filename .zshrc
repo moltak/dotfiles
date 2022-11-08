@@ -13,6 +13,7 @@ plugins=(
   git
   zsh-autosuggestions
   fasd
+  aws
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -46,3 +47,6 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/engeng/Library/Caches/heroku/autocomplete/zsh_se
 # android
 export ANDROID_SDK="/Users/engeng/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin
+
+# serverless-better-credentials
+export AWS_SDK_LOAD_CONFIG=1
