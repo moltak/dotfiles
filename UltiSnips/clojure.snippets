@@ -1,0 +1,11 @@
+snippet "\((comment|do)" "comment" r
+(`!p snip.rv = match.group(1)`
+	${0}
+endsnippet
+
+
+snippet rcf "rich comment form" b
+(comment
+		${0}
+		:rcf)
+endsnippet

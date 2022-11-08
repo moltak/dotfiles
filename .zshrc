@@ -50,3 +50,10 @@ export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$ANDROID_SDK/to
 
 # serverless-better-credentials
 export AWS_SDK_LOAD_CONFIG=1
+
+# sdkman
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# rbenv (ruby)
+eval "$(rbenv init - zsh)"

@@ -10,5 +10,6 @@
     "suggest.echodocSupport": true,
     "codeLens.enable": true,
     "signature.enable": true,
+    "python.pythonPath":"/opt/homebrew/bin/python3",
     "suggest.preferCompleteThanJumpPlaceholder": true
 }
