@@ -100,19 +100,12 @@ nnoremap <f2><f1> :bp!<CR>
 nnoremap <f3><f3> :reg<CR>
 nnoremap <f4><f4> <cmd>Ag<CR>
 nnoremap <silent> <F2>d :bd!<CR>
-" 현재 버퍼를 닫고 이전 버퍼로 이동
-"nnoremap <silent> <F9><F6>      :bp <BAR> bd #<CR>
-"nnoremap <silent> <F9>q      :bp <BAR> bd #<CR>
-"nnoremap <silent> <F9><F9>  :Buffers<CR>
-" 현재 버퍼만 남기고 모두 닫기
 nnoremap <silent> <f2>o :%bd <BAR> e # <BAR> bd #<CR>
 
-nnoremap <F10>r :vs ~/.vimrc<CR>
+nnoremap <F12>1 :vs ~/dotfiles/nvim/init.vim<CR>
+nnoremap <F12>2 :vs ~/dotfiles/UltiSnips/all.snippets<CR>
 
-" Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
 
