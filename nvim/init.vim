@@ -29,6 +29,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'tpope/vim-commentary'
+
 
 " session
 Plug 'mhinz/vim-startify'
@@ -104,10 +106,10 @@ nnoremap <silent> <f2>o :%bd <BAR> e # <BAR> bd #<CR>
 
 nnoremap <F12>1 :vs ~/dotfiles/nvim/init.vim<CR>
 nnoremap <F12>2 :vs ~/dotfiles/UltiSnips/all.snippets<CR>
+nnoremap <F12>3 :vs ~/dotfiles/nvim/vim-include/set-vimwiki.vim<CR>
 
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
 
 let g:python3_host_prog= '/opt/homebrew/bin/python3'
 
