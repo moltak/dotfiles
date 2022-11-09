@@ -11,7 +11,9 @@
   ffs = flow feature start
   fff = flow feature finish
   rr = rebase -i HEAD~2
-  assume = update-index --assume-unchanged
+  update-index-assume = update-index --assume-unchanged
+  update-index-no-assume = update-index --no-assume-unchanged
+  update-index-really-refresh = update-index --really-refresh
 
   
 [core]

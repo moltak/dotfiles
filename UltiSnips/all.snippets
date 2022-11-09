@@ -1,5 +1,11 @@
+snippet today
+Today is the `date +%d.%m.%y`.
+endsnippet
+
+snippet wow
+${1:Text}`!p snip.rv = (30-2*len(t[1]))*' '+t[1].upper()`
+endsnippet
+
 snippet "([^\s].*)\.return" "Return (postfix)" r
 return `!p snip.rv = match.group(1)`$0
 endsnippet
-
-

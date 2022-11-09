@@ -177,6 +177,12 @@ augroup vim_clojure_key_binding
   autocmd FileType clojure nmap scl :IcedMoveToLet<CR>
   autocmd FileType clojure nmap sc> :IcedThread
 
+  " =
+  autocmd FileType clojure nmap == <Plug>(iced_format)
+  " https://github.com/junegunn/vim-easy-align/issues/115#issuecomment-325899234
+  autocmd FileType clojure nnoremap =[ vi[<c-v>$:EasyAlign\ g/^\S/<cr>gv=
+  autocmd FileType clojure nnoremap ={ vi{<c-v>$:EasyAlign\ g/^\S/<cr>gv=
+
 
 augroup END
 

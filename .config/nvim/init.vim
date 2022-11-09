@@ -65,6 +65,10 @@ Plug 'nvim-lua/plenary.nvim'
 
 " wiki
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+
+" easy align
+Plug 'junegunn/vim-easy-align'
+
 call plug#end()
 
 colorscheme gruvbox
@@ -94,6 +98,7 @@ nnoremap <f2><f2> :Buffers<CR>
 nnoremap <f2><f3> :bn!<CR>
 nnoremap <f2><f1> :bp!<CR>
 nnoremap <f3><f3> :reg<CR>
+nnoremap <f4><f4> <cmd>Ag<CR>
 nnoremap <silent> <F2>d :bd!<CR>
 " 현재 버퍼를 닫고 이전 버퍼로 이동
 "nnoremap <silent> <F9><F6>      :bp <BAR> bd #<CR>
@@ -103,6 +108,13 @@ nnoremap <silent> <F2>d :bd!<CR>
 nnoremap <silent> <f2>o :%bd <BAR> e # <BAR> bd #<CR>
 
 nnoremap <F10>r :vs ~/.vimrc<CR>
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 
 let g:python3_host_prog= '/opt/homebrew/bin/python3'
 

@@ -1,4 +1,7 @@
 "ref: https://github.com/johngrib/dotfiles/blob/master/nvim/vim-include/set-coc.vim
+"
+"
+inoremap <silent><expr> <c-space> coc#refresh()
 
 
 " COC extension
