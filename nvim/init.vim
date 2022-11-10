@@ -7,12 +7,9 @@ Plug 'junegunn/fzf.vim'
 
 " Requires
 Plug 'guns/vim-sexp',    {'for': 'clojure'}
-Plug 'liquidz/vim-iced', {'for': 'clojure'}
-Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 
 " coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " 자꾸 coc가 멈춰서..
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " vim-airline
 Plug 'vim-airline/vim-airline'
@@ -30,7 +27,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'tpope/vim-commentary'
-
 
 " session
 Plug 'mhinz/vim-startify'
@@ -72,6 +68,14 @@ Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 Plug 'junegunn/vim-easy-align'
 
 Plug 'junegunn/vim-xmark', { 'do': 'make' }
+
+" language
+  " Clojure
+  Plug 'liquidz/vim-iced', {'for': 'clojure'}
+  Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
+
+  " Typescript
+  Plug 'leafgarland/typescript-vim' 
 call plug#end()
 
 colorscheme gruvbox
