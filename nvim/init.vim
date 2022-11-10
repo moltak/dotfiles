@@ -71,6 +71,7 @@ Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 " easy align
 Plug 'junegunn/vim-easy-align'
 
+Plug 'junegunn/vim-xmark', { 'do': 'make' }
 call plug#end()
 
 colorscheme gruvbox
@@ -108,8 +109,8 @@ nnoremap <F12>1 :vs ~/dotfiles/nvim/init.vim<CR>
 nnoremap <F12>2 :vs ~/dotfiles/UltiSnips/all.snippets<CR>
 nnoremap <F12>3 :vs ~/dotfiles/nvim/vim-include/set-vimwiki.vim<CR>
 
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
+xmap =f <Plug>(EasyAlign)
+nmap =f <Plug>(EasyAlign)
 
 let g:python3_host_prog= '/opt/homebrew/bin/python3'
 
