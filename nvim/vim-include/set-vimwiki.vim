@@ -10,7 +10,12 @@ let g:vimwiki_list = [
     \   'path': '/Users/engeng/fun/wiki/_wiki',
     \   'ext' : '.md',
     \   'diary_rel_path': '.',
-    \}
+    \},
+    \{
+    \   'path': '/Users/engeng/OneDrive/wiki',
+    \   'ext' : '.md',
+    \   'diary_rel_path': '.',
+    \},
 \]
 
 " vimwiki의 conceallevel 을 끄는 쪽이 좋다
