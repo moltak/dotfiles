@@ -198,3 +198,19 @@ let g:iced#hook = {
       \ 'type': 'function',
       \ 'exec': {params -> Noti_pipe(params, 'REPL에 연결되었습니다.')}},
       \}
+
+lua << EOF
+vim.notify = require('notify')
+
+function _G.noti_custom_text(text)
+    vim.notify(text, vim.log.levels.INFO, {
+        stages = 'slide',
+        render = 'minimal',
+    })
+end
+EOF
+
+function! Noti_pipe(param, text)
+    call v:lua.noti_custom_text(a:text)
+    return a:param
+endfunction
