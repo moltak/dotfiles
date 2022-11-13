@@ -114,20 +114,27 @@ set cursorcolumn
 nnoremap <f1><f1> :Files<CR>
 nnoremap <f1><f2> :History<CR>
 nnoremap <f2><f2> :Buffers<CR>
-nnoremap <f2><f3> :bn!<CR>
-nnoremap <f2><f1> :bp!<CR>
 nnoremap <f3><f3> :reg<CR>
-nnoremap <D-[> :bp!<CR>
-nnoremap <D-]> :bn!<CR>
-" nnoremap sot :ToggleTerm<CR>
 nnoremap <f4><f4> <cmd>Ag<CR>
+
+" buffer
 nnoremap <silent> <F2>d :bd!<CR>
 nnoremap <silent> <f2>o :%bd <BAR> e # <BAR> bd #<CR>
+nnoremap <f2><f3> :bn!<CR>
+nnoremap <f2><f1> :bp!<CR>
+nnoremap <D-[> :bp!<CR>
+nnoremap <D-]> :bn!<CR>
+nnoremap <D-w> :bd!<CR>
 
+" split
+nnoremap <D-\> :vs<CR>
+
+" settings files
 nnoremap <F12>1 :vs ~/dotfiles/nvim/init.vim<CR>
 nnoremap <F12>2 :vs ~/dotfiles/UltiSnips/all.snippets<CR>
 nnoremap <F12>3 :vs ~/dotfiles/nvim/vim-include/set-vimwiki.vim<CR>
 
+" easyalign
 xmap =f <Plug>(EasyAlign)
 nmap =f <Plug>(EasyAlign)
 
