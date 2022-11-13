@@ -46,6 +46,8 @@ brew "clojure-lsp/brew/clojure-lsp-native"
 brew "heroku/brew/heroku"
 brew "thezoraiz/ascii-image-converter/ascii-image-converter"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+brew "watchman"
+brew "lazygit"
 cask "android-file-transfer"
 cask "dbeaver-community"
 cask "docker"
