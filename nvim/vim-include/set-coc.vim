@@ -9,6 +9,7 @@ let g:coc_global_extensions = [
             \ 'coc-ultisnips',
             \ 'coc-snippets',
             \ 'coc-explorer',
+            \ 'coc-tsserver',
             \]
 
 " 팝업 메뉴가 보인다면 coc 자동완성
