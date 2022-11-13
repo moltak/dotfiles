@@ -84,6 +84,10 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   " Typescript
   Plug 'leafgarland/typescript-vim' 
 
+  " Javasciprt
+  Plug 'pangloss/vim-javascript'
+  Plug 'neoclide/coc-tsserver'
+
 call plug#end()
 
 colorscheme gruvbox
@@ -115,7 +119,7 @@ nnoremap <f2><f1> :bp!<CR>
 nnoremap <f3><f3> :reg<CR>
 nnoremap <D-[> :bp!<CR>
 nnoremap <D-]> :bn!<CR>
-nnoremap <C-`> :term<CR>
+" nnoremap sot :ToggleTerm<CR>
 nnoremap <f4><f4> <cmd>Ag<CR>
 nnoremap <silent> <F2>d :bd!<CR>
 nnoremap <silent> <f2>o :%bd <BAR> e # <BAR> bd #<CR>

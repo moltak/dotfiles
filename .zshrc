@@ -57,3 +57,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # rbenv (ruby)
 eval "$(rbenv init - zsh)"
+
+# lazy git
+XDG_CONFIG_HOME="$HOME/.config"
