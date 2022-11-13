@@ -1,0 +1,10 @@
+#!/bin/bash
+
+npm install -g typescript-language-server \
+typescript \
+@nestjs/cli \
+corepack \
+firebase-tools \
+nodemon \
+yamljs \
+yarn
