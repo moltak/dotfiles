@@ -25,4 +25,5 @@ let g:tagbar_type_clojure = {
       \ 'kinds' : ['n:ns', 'e:form', 'r:restUrl', 't:todo'],
       \}
 
-
+"let g:tagbar_position = 'leftabove vertical'
+let g:tagbar_left = 1
