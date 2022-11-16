@@ -2,8 +2,8 @@
 " startify
 " let g:startify_custom_header = ['']
 
-nmap \s :Startify<CR>
-nmap \\s :SSave<CR>
+nmap so\s :Startify<CR>
+nmap so\\s :SSave<CR>
 
 let g:startify_update_oldfiles = 1
 let g:startify_change_to_vcs_root = 1

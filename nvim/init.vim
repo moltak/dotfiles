@@ -90,7 +90,7 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
 call plug#end()
 
-colorscheme gruvbox
+colorscheme evening
 
 set nu
 set tabstop=2

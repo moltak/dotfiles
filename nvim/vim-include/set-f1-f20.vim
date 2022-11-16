@@ -6,7 +6,8 @@ nnoremap <f1><f1> :Files<CR>
 nnoremap <f1><f2> :History<CR>
 nnoremap <f2><f2> :Buffers<CR>
 nnoremap <f3><f3> :reg<CR>
-nnoremap <f4><f4> <cmd>Ag<CR>
+nnoremap <f4><f4> :Ag<CR>
+nnoremap <f2>s    :Lines <CR>
 
 " buffer
 nnoremap <silent> <F2>d :BuffersDelete<CR>
@@ -21,6 +22,12 @@ nnoremap <f2><f1> :bp!<CR>
 " split
 "nnoremap <D-\> :vs<CR>
 "nnoremap sos :vs<CR>
+
+" 
+nnoremap som :Marks<CR>
+nnoremap sos :Snippets<CR>
+nnoremap soc :Commits<CR>
+nnoremap \s  :Tags <CR>
 
 " https://www.reddit.com/r/neovim/comments/mlqyca/fzf_buffer_delete/
 function! s:list_buffers()
@@ -40,6 +47,8 @@ command! BuffersDelete call fzf#run(fzf#wrap({
             \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept' }))
 
 " f12
-nnoremap <F12>1 :vs ~/dotfiles/nvim/init.vim<CR>
-nnoremap <F12>2 :vs ~/dotfiles/UltiSnips/all.snippets<CR>
-nnoremap <F12>3 :vs ~/dotfiles/nvim/vim-include/set-vimwiki.vim<CR>
+nnoremap <F12>vim :vs ~/dotfiles/nvim/init.vim<CR>
+nnoremap <F12>snip :vs ~/dotfiles/UltiSnips/all.snippets<CR>
+nnoremap <F12>wiki :vs ~/dotfiles/nvim/vim-include/set-vimwiki.vim<CR>
+nnoremap <F12>f1 :vs ~/dotfiles/nvim/vim-include/set-f1-f20.vim<CR>
+nnoremap <F12>cl :vs ~/dotfiles/nvim/vim-include/set-clojure.vim<CR>
