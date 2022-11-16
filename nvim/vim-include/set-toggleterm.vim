@@ -12,8 +12,8 @@ require("toggleterm").setup{
     float_opts = {
     border = "double",
     winblend = 3,
-  },
-  shell = "tmux"
+  }
+  --shell = "tmux"
 }
 
 -- bottom
@@ -23,8 +23,8 @@ require("toggleterm").setup{
   auto_scroll = true,
   shade_terminals = true,
   shading_factor = 1,
-  direction = "horizontal",
-  shell = "tmux"
+  direction = "horizontal"
+  --shell = "tmux"
 }
 
 -- lazygit
