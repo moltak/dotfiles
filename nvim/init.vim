@@ -42,6 +42,7 @@ Plug 'preservim/tagbar'
 
 " theme
 Plug 'morhetz/gruvbox'
+Plug 'johngrib/FlatColor-johngrib'
 
 " chrome vim extension 처럼 커서 이동
 Plug 'easymotion/vim-easymotion'
@@ -90,7 +91,8 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
 call plug#end()
 
-colorscheme evening
+" colorscheme evening
+colorscheme flatcolor-johngrib
 
 set nu
 set tabstop=2

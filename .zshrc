@@ -7,7 +7,7 @@ export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:~/.vim/plugged/vim-iced/bin
 
-ZSH_THEME="junkfood"
+ZSH_THEME="simple"
 
 plugins=(
   git
