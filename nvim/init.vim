@@ -92,7 +92,8 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 call plug#end()
 
 " colorscheme evening
-colorscheme flatcolor-johngrib
+"colorscheme flatcolor-johngrib
+colorscheme slate
 
 set nu
 set tabstop=2
