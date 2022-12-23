@@ -89,7 +89,7 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'pangloss/vim-javascript'
   Plug 'neoclide/coc-tsserver'
 
-Plug 'edluffy/hologram.nvim'
+"Plug 'edluffy/hologram.nvim'
 
 call plug#end()
 
@@ -211,11 +211,11 @@ augroup cursor_move_selected_word
     highlight MatchParen ctermbg=red guibg=#8c709a
 augroup END
 
-lua << EOF
-require('hologram').setup{
-    auto_display = true -- WIP automatic markdown image display, may be prone to breaking
-}
-EOF
+"lua << EOF
+"require('hologram').setup{
+"    auto_display = true -- WIP automatic markdown image display, may be prone to breaking
+"}
+"EOF
 
 "* 설정 파일 include
 for include_file in uniq(sort(globpath(&rtp, 'vim-include/*.vim', 0, 1)))
