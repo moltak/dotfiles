@@ -38,3 +38,7 @@
 --regex-clojure=/^[\{ \t]{2}(:[a-zA-Z0-9\/\-]+)/-·\1/e/
 
 # test 
+--regex-clojure=/^ {0,2}\(testing[ \t]+"(.*)"/·\1/e/
+--regex-clojure=/^ {3,4}\(testing[ \t]+"(.*)"/··\1/e/
+--regex-clojure=/^ {5,6}\(testing[ \t]+"(.*)"/···\1/e/
+--regex-clojure=/^ {7,8}\(testing[ \t]+"(.*)"/····\1/e/

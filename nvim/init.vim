@@ -89,11 +89,13 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'pangloss/vim-javascript'
   Plug 'neoclide/coc-tsserver'
 
+Plug 'edluffy/hologram.nvim'
+
 call plug#end()
 
-" colorscheme evening
+"colorscheme evening
 "colorscheme flatcolor-johngrib
-colorscheme slate
+colorscheme gruvbox
 
 set nu
 set tabstop=2
@@ -210,17 +212,8 @@ augroup cursor_move_selected_word
 augroup END
 
 lua << EOF
-require('image').setup {
-  render = {
-    min_padding = 5,
-    show_label = true,
-    use_dither = true,
-    foreground_color = false,
-    background_color = false
-  },
-  events = {
-    update_on_nvim_resize = true,
-  },
+require('hologram').setup{
+    auto_display = true -- WIP automatic markdown image display, may be prone to breaking
 }
 EOF
 
@@ -228,4 +221,5 @@ EOF
 for include_file in uniq(sort(globpath(&rtp, 'vim-include/*.vim', 0, 1)))
     execute "source " . include_file
 endfor
+
 
