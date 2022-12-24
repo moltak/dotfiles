@@ -89,6 +89,9 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'pangloss/vim-javascript'
   Plug 'neoclide/coc-tsserver'
 
+  " dart
+  Plug 'dart-lang/dart-vim-plugin'
+  Plug 'thosakwe/vim-flutter'
 "Plug 'edluffy/hologram.nvim'
 
 call plug#end()
