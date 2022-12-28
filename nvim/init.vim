@@ -16,7 +16,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'ctrlpvim/ctrlp.vim' " file buffer search
-Plug 'tpope/vim-fugitive' " git command
 
 " 비활성 윈도우 강조
 "Plug 'blueyed/vim-diminactive'
@@ -61,7 +60,11 @@ Plug 'kamykn/popup-menu.nvim'
 
 " image.vim
 Plug 'samodostal/image.nvim'
+
+" All the lua functions I don't want to write twice.
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 " wiki
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
@@ -70,7 +73,6 @@ Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
   " easy align
   Plug 'junegunn/vim-easy-align'
   Plug 'junegunn/vim-xmark', { 'do': 'make' }
-
 
 " Util
 "terminal
@@ -90,6 +92,15 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'neoclide/coc-tsserver'
 
 "Plug 'edluffy/hologram.nvim'
+
+" diff
+Plug 'sindrets/diffview.nvim'
+
+Plug 'nvim-tree/nvim-web-devicons'
+
+" git
+Plug 'tpope/vim-fugitive' " git command
+Plug 'pwntester/octo.nvim'
 
 call plug#end()
 
