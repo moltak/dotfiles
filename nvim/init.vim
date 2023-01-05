@@ -105,6 +105,9 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'tpope/vim-fugitive' " git command
 Plug 'pwntester/octo.nvim'
 
+" terminal
+Plug 'preservim/vimux'
+
 call plug#end()
 
 "colorscheme evening

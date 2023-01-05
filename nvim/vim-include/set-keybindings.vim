@@ -56,3 +56,9 @@ nnoremap <F12>flutter :vs ~/dotfiles/nvim/vim-include/set-flutter.vim<CR>
 
 "" 도움말 사용안함.
 nnoremap <F1> <CR> 
+
+
+" special order something
+nmap s <nop>
+nmap so <nop>
+nmap sot :VimuxPromptCommand<CR>
