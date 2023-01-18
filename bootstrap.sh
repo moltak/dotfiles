@@ -29,6 +29,5 @@ ln -nfs $HOME/dotfiles/nvim           $HOME/.config/nvim
 ln -nfs $HOME/dotfiles/iterm2         $HOME/.config/iterm2
 ln -nfs $HOME/dotfiles/UltiSnips      $HOME/UltiSnips
 ln -nfs $HOME/dotfiles/vim            $HOME/.vim
-ln -nfs $HOME/dotfiles/clojuredocs    $HOME/clojuredocs
 
 source $HOME/.zshrc

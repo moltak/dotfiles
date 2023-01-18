@@ -25,6 +25,7 @@ export HOMEBREW_NO_ENV_HINTS=FALSE
 alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
+alias ctags=$(brew --prefix)/Cellar/ctags/5.8_2/bin/ctags
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
