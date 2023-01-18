@@ -92,6 +92,10 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
   Plug 'jparise/vim-graphql'        " GraphQL syntax
   Plug 'neoclide/coc-tsserver'
+  Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
 
   " dart
   Plug 'dart-lang/dart-vim-plugin'
