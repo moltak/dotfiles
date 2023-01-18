@@ -10,6 +10,10 @@ let g:coc_global_extensions = [
             \ 'coc-snippets',
             \ 'coc-explorer',
             \ 'coc-tsserver',
+            \ 'coc-json',
+            \ 'coc-clojure',
+            \ 'coc-clangd',
+            \ 'coc-prettier'
             \]
 
 " 팝업 메뉴가 보인다면 coc 자동완성
