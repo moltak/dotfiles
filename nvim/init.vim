@@ -4,6 +4,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " One of following
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'antoinemadec/coc-fzf'
 
 " Requires
 Plug 'guns/vim-sexp',    {'for': 'clojure'}
@@ -65,6 +66,7 @@ Plug 'samodostal/image.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'fannheyward/telescope-coc.nvim'
 
 " wiki
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
@@ -85,10 +87,10 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 
   " Typescript
-  Plug 'leafgarland/typescript-vim' 
-
-  " Javasciprt
-  Plug 'pangloss/vim-javascript'
+  Plug 'pangloss/vim-javascript'    " JavaScript support
+  Plug 'leafgarland/typescript-vim' " TypeScript syntax
+  Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+  Plug 'jparise/vim-graphql'        " GraphQL syntax
   Plug 'neoclide/coc-tsserver'
 
   " dart

@@ -53,6 +53,8 @@ nnoremap <F12>wiki :vs ~/dotfiles/nvim/vim-include/set-vimwiki.vim<CR>
 nnoremap <F12>f1 :vs ~/dotfiles/nvim/vim-include/set-f1-f20.vim<CR>
 nnoremap <F12>clj :vs ~/dotfiles/nvim/vim-include/set-clojure.vim<CR>
 nnoremap <F12>flutter :vs ~/dotfiles/nvim/vim-include/set-flutter.vim<CR>
+nnoremap <F12>ts :vs ~/dotfiles/nvim/vim-include/set-typescript.vim<CR>
+nnoremap <F12>js :vs ~/dotfiles/nvim/vim-include/set-javascript.vim<CR>
 
 "" 도움말 사용안함.
 nnoremap <F1> <CR> 
