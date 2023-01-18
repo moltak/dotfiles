@@ -13,7 +13,9 @@ let g:coc_global_extensions = [
             \ 'coc-json',
             \ 'coc-clojure',
             \ 'coc-clangd',
-            \ 'coc-prettier'
+            \ 'coc-prettier',
+            \ 'coc-copilot',
+            \ 'coc-flutter'
             \]
 
 " 팝업 메뉴가 보인다면 coc 자동완성
