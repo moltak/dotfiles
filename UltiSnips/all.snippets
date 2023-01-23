@@ -10,8 +10,12 @@ snippet "([^\s].*)\.return" "Return (postfix)" r
 return `!p snip.rv = match.group(1)`$0
 endsnippet
 
-snippet svelte-code-block
-```svelte
+snippet svelte-code-block "Svelte code block" b
+\`\`\`svelte
+${1}
+\`\`\`
+endsnippet
 
-```
+snippet const-var "Const variable"
+const ${1:variable} = ${2:value};
 endsnippet
