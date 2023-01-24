@@ -32,9 +32,46 @@ local function move_win_to_right()
     win:setFrame(frame)
 end
 
+local function move_win_to_up()
+    local win = hs.window.focusedWindow()
+    local frame = win:frame()
+    local screen = win:screen():frame()
+    frame.x = screen.x
+    frame.y = 0 -- y를 탑으로 조정
+    frame.w = screen.w
+    frame.h = screen.h / 2 
+    win:setFrame(frame)
+end
+
+local function move_win_to_down()
+    local win = hs.window.focusedWindow()
+    local frame = win:frame()
+    local screen = win:screen():frame()
+    frame.x = screen.x
+    frame.y = screen.y + (screen.h / 2) -- y를 중간으로 조정
+    frame.w = screen.w
+    frame.h = screen.h / 2
+    win:setFrame(frame)
+end
+
+local function resize_to_full_screen()
+    local win = hs.window.focusedWindow()
+    local frame = win:frame()
+    local screen = win:screen():frame()
+    frame.x = screen.x
+    frame.y = screen.y
+    frame.w = screen.w
+    frame.h = screen.h
+    win:setFrame(frame)
+end
+
 -- tmux 처럼 커맨드 명령어에 들어가서 대기하도록 할 수 없을까?
---hs.hotkey.bind({'option', 'shift'}, 'h', move_win_to_left)
---hs.hotkey.bind({'option', 'shift'}, 'l', move_win_to_right)
+hs.hotkey.bind({'option', 'shift'}, 'h', move_win_to_left)
+hs.hotkey.bind({'option', 'shift'}, 'k', move_win_to_up)
+hs.hotkey.bind({'option', 'shift'}, 'j', move_win_to_down)
+hs.hotkey.bind({'option', 'shift'}, 'l', move_win_to_right)
+
+hs.hotkey.bind({'option', 'control'}, 'f', resize_to_full_screen)
 
 
 -- https://johngrib.github.io/blog/2017/05/04/input-source/
