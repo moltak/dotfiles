@@ -10,25 +10,40 @@ end)
 hs.hints.hintChars = {'1', '2', '3', '4', 'Q', 'W', 'E', 'R'}
 hs.hotkey.bind({'cmd'}, 'F2', hs.hints.windowHints)
 
+local logger = hs.logger.new('logger', 'debug')
+
 local function move_win_to_left()
     local win = hs.window.focusedWindow()   -- 현재 활성화된 앱의 윈도우
     local frame = win:frame()
     local screen = win:screen():frame()     -- 현재 화면
+
+    if frame.x == 0 then
+      frame.h = screen.h
+    end
+
     frame.x = screen.x
-    frame.y = screen.y
-    frame.w = screen.w / 2      -- width를 화면의 1/2 로 조정
-    frame.h = screen.h
+    --frame.y = screen.y
+    --frame.w = screen.w / 2      -- width를 화면의 1/2 로 조정
+    --frame.h = screen.h
     win:setFrame(frame)
 end
+
 
 local function move_win_to_right()
     local win = hs.window.focusedWindow()
     local frame = win:frame()
     local screen = win:screen():frame()
-    frame.x = screen.x + (screen.w / 2) -- 윈도우의 x 좌표를 화면 width의 1/2 로 조정
-    frame.y = screen.y
-    frame.w = screen.w / 2      -- width를 화면의 1/2 로 조정
-    frame.h = screen.h
+
+    local half = screen.x + (screen.w / 2)
+    
+    if frame.x == half then
+      frame.h = screen.h
+    end
+
+    frame.x = half
+    --frame.y = screen.y
+    --frame.w = screen.w / 2      -- width를 화면의 1/2 로 조정
+    --frame.h = screen.h
     win:setFrame(frame)
 end
 
@@ -36,9 +51,9 @@ local function move_win_to_up()
     local win = hs.window.focusedWindow()
     local frame = win:frame()
     local screen = win:screen():frame()
-    frame.x = screen.x
+    --frame.x = screen.x
     frame.y = 0 -- y를 탑으로 조정
-    frame.w = screen.w
+    --frame.w = screen.w
     frame.h = screen.h / 2 
     win:setFrame(frame)
 end
@@ -47,9 +62,9 @@ local function move_win_to_down()
     local win = hs.window.focusedWindow()
     local frame = win:frame()
     local screen = win:screen():frame()
-    frame.x = screen.x
+    --frame.x = screen.x
     frame.y = screen.y + (screen.h / 2) -- y를 중간으로 조정
-    frame.w = screen.w
+    --frame.w = screen.w
     frame.h = screen.h / 2
     win:setFrame(frame)
 end
