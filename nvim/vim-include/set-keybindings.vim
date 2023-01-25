@@ -48,7 +48,7 @@ command! BuffersDelete call fzf#run(fzf#wrap({
 
 " f12
 nnoremap <F12>vim :vs ~/dotfiles/nvim/init.vim<CR>
-nnoremap <F12>snip :vs ~/dotfiles/UltiSnips/all.snippets<CR>
+nnoremap <F12>ul :vs ~/dotfiles/UltiSnips/all.snippets<CR>
 nnoremap <F12>wiki :vs ~/dotfiles/nvim/vim-include/set-vimwiki.vim<CR>
 nnoremap <F12>f1 :vs ~/dotfiles/nvim/vim-include/set-f1-f20.vim<CR>
 nnoremap <F12>clj :vs ~/dotfiles/nvim/vim-include/set-clojure.vim<CR>

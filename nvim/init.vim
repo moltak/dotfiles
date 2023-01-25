@@ -114,6 +114,9 @@ Plug 'pwntester/octo.nvim'
 " terminal
 Plug 'preservim/vimux'
 
+" copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 "colorscheme evening
