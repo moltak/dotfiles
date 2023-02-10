@@ -102,6 +102,9 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'thosakwe/vim-flutter'
 "Plug 'edluffy/hologram.nvim'
 
+  " rescript
+  Plug 'rescript-lang/vim-rescript'
+
 " diff
 Plug 'sindrets/diffview.nvim'
 
