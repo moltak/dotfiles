@@ -91,6 +91,7 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'leafgarland/typescript-vim' " TypeScript syntax
   Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
   Plug 'jparise/vim-graphql'        " GraphQL syntax
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   Plug 'neoclide/coc-tsserver'
   Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
