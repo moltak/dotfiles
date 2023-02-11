@@ -98,6 +98,9 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 
+  " html
+  Plug 'alvan/vim-closetag'
+
   " dart
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'thosakwe/vim-flutter'
