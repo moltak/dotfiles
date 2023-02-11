@@ -100,6 +100,8 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
   " html
   Plug 'alvan/vim-closetag'
+  Plug 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
+Plug 'cakebaker/scss-syntax.vim'
 
   " dart
   Plug 'dart-lang/dart-vim-plugin'
@@ -256,3 +258,4 @@ for include_file in uniq(sort(globpath(&rtp, 'vim-include/*.vim', 0, 1)))
 endfor
 
 let g:tagbar_ctags_bin = "/opt/homebrew/bin/ctags"
+let g:coc_node_path = "~/.nvm/versions/node/v16.15.1/bin/node"
