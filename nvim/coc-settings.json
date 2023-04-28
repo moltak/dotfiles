@@ -1,15 +1,23 @@
 {
-    "clangd.semanticHighlighting": true,
-    "clangd.path":"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd",
-    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-    "diagnostic.errorSign": "✖",
-    "diagnostic.warningSign": "⚠",
-    "diagnostic.infoSign": "ℹ",
-    "diagnostic.hintSign": "➤",
-    "suggest.noselect": false,
-    "suggest.echodocSupport": true,
-    "codeLens.enable": true,
-    "signature.enable": true,
-    "python.pythonPath":"/opt/homebrew/bin/python3",
-    "suggest.preferCompleteThanJumpPlaceholder": true
+  "clangd.semanticHighlighting": true,
+  "clangd.path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd",
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+  "diagnostic.errorSign": "✖",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "ℹ",
+  "diagnostic.hintSign": "➤",
+  "suggest.noselect": false,
+  "suggest.echodocSupport": true,
+  "codeLens.enable": true,
+  "signature.enable": true,
+  "python.pythonPath": "/opt/homebrew/bin/python3",
+  "suggest.preferCompleteThanJumpPlaceholder": true,
+  "java.configuration.runtimes": [
+    {
+      "name": "openjdk17",
+      "path": "/opt/homebrew/opt/openjdk/bin"
+    }
+  ],
+  "java.saveActions.organizeImports": true,
+  "java.import.gradle.java.home": "/Users/engeng/Library/Java/JavaVirtualMachines/corretto-17.0.6/Contents/Home"
 }
