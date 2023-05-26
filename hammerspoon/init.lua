@@ -151,6 +151,7 @@ function reset_boxes()
     boxes = {}
 end
 
+
 function draw_rectangle(target_draw, x, y, width, height, fill_color)
   target_draw:setSize(hs.geometry.rect(x, y, width, height))
   target_draw:setTopLeft(hs.geometry.point(x, y))
