@@ -1,4 +1,4 @@
-hs.hotkey.bind({'shift', 'cmd'}, 'H', function() hs.alert.show('Hello, world!') end)
+--hs.hotkey.bind({'shift', 'cmd'}, 'H', function() hs.alert.show('Hello, world!') end)
 -- comment
 
 hs.hotkey.bind({'option', 'cmd'}, 'r', hs.reload)
