@@ -61,3 +61,5 @@ eval "$(rbenv init - zsh)"
 
 # lazy git
 XDG_CONFIG_HOME="$HOME/.config"
+
+export JAVA_HOME="/opt/homebrew/opt/openjdk"

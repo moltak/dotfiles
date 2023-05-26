@@ -12,5 +12,6 @@
   "signature.enable": true,
   "python.pythonPath": "/opt/homebrew/bin/python3",
   "suggest.preferCompleteThanJumpPlaceholder": true,
-  "java.saveActions.organizeImports": true
+  "java.saveActions.organizeImports": true,
+  "java.compile.nullAnalysis.mode": "disabled"
 }
