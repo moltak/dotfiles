@@ -1,0 +1,9 @@
+{
+  "java.configuration.runtimes": [
+    {
+      "name": "openjdk17",
+      "path": "/opt/homebrew/opt/openjdk/bin"
+    }
+  ],
+  "java.import.gradle.java.home": "/Users/engeng/Library/Java/JavaVirtualMachines/corretto-17.0.6/Contents/Home"
+}

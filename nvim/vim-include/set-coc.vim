@@ -16,6 +16,8 @@ let g:coc_global_extensions = [
             \ 'coc-prettier',
             \ 'coc-copilot',
             \ 'coc-flutter',
+            \ 'coc-java',
+            \ 'coc-java-debug',
             \ 'coc-rescript'
             \]
 
