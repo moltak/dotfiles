@@ -108,7 +108,7 @@ local boxes = {}
 local inputEnglish = "com.apple.keylayout.ABC"
 local box_height = 23
 local box_alpha = 0.35
-local GREEN = hs.drawing.color.osx_green
+local GREEN = hs.drawing.color.osx_red
 
 -- 입력소스 변경 이벤트에 이벤트 리스너를 달아준다
 hs.keycodes.inputSourceChanged(function()
