@@ -16,9 +16,8 @@ let g:coc_global_extensions = [
             \ 'coc-prettier',
             \ 'coc-copilot',
             \ 'coc-flutter',
-            \ 'coc-java',
-            \ 'coc-java-debug',
-            \ 'coc-rescript'
+            \ 'coc-rescript',
+            \ 'coc-elixir'
             \]
 
 " 팝업 메뉴가 보인다면 coc 자동완성

@@ -126,9 +126,6 @@ Plug 'preservim/vimux'
 " copilot
 Plug 'github/copilot.vim'
 
-" java
-Plug 'hdiniz/vim-gradle'
-
 call plug#end()
 
 "colorscheme evening
