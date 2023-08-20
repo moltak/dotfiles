@@ -2,7 +2,7 @@
 "
 
 " f1 - f2
-nnoremap <f1><f1> :Files<CR>
+nnoremap <f1><f1> :GFiles<CR>
 nnoremap <f1><f2> :History<CR>
 nnoremap <f2><f2> :Buffers<CR>
 nnoremap <f3><f3> :reg<CR>
