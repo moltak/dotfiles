@@ -130,6 +130,9 @@ Plug 'github/copilot.vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 
+" svelte
+Plug 'othree/html5.vim'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 call plug#end()
 
