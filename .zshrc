@@ -63,3 +63,6 @@ eval "$(rbenv init - zsh)"
 XDG_CONFIG_HOME="$HOME/.config"
 
 export JAVA_HOME="/opt/homebrew/opt/openjdk"
+
+# rust
+export PATH=$PATH:$HOME/.cargo/bin
