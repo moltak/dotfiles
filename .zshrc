@@ -26,6 +26,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
 #alias ctags=$(brew --prefix)/Cellar/ctags/5.8_2/bin/ctags
+alias githash="git log --pretty=format:"%H" -n 1|grep -v grep|cut -c 1-10|xargs echo $(git rev-parse --abbrev-ref HEAD|cut -c 1-3)|pbcopy"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"

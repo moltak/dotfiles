@@ -118,7 +118,7 @@ Plug 'nvim-tree/nvim-web-devicons'
 
 " git
 Plug 'tpope/vim-fugitive' " git command
-Plug 'pwntester/octo.nvim'
+" Plug 'pwntester/octo.nvim'
 
 " terminal
 Plug 'preservim/vimux'
@@ -133,6 +133,9 @@ Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 " svelte
 Plug 'othree/html5.vim'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
+
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 
