@@ -2,7 +2,7 @@
 export FLUTTER_BIN=/Users/engeng/sdk/flutter/bin
 export PATH=$PATH:$FLUTTER_BIN
 export PATH=$PATH:"$HOME/.pub-cache/bin"
-export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
+#export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:~/.vim/plugged/vim-iced/bin
@@ -63,7 +63,7 @@ eval "$(rbenv init - zsh)"
 # lazy git
 XDG_CONFIG_HOME="$HOME/.config"
 
-export JAVA_HOME="/opt/homebrew/opt/openjdk"
+export JAVA_HOME="/Users/engeng/.sdkman/candidates/java/current"
 
 # rust
 export PATH=$PATH:$HOME/.cargo/bin
@@ -72,8 +72,6 @@ if [ "$(arch)" = "arm64" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     eval "$(/usr/local/bin/brew shellenv)"
+    export PATH="/usr/local/opt/game-porting-toolkit-compiler/bin:$PATH"
 fi
-
-# game porting toolkit
-export PATH="/usr/local/opt/game-porting-toolkit-compiler/bin:$PATH"
 
