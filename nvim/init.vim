@@ -36,6 +36,9 @@ Plug 'luochen1990/rainbow'
 " snippet
 Plug 'SirVer/ultisnips'
 
+" ruby
+Plug 'tpope/vim-rails'
+
 " tags
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'preservim/tagbar'

@@ -56,6 +56,7 @@ export AWS_SDK_LOAD_CONFIG=1
 # sdkman
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export JAVA_HOME="/Users/engeng/.sdkman/candidates/java/current"
 
 # rbenv (ruby)
 eval "$(rbenv init - zsh)"
@@ -63,15 +64,14 @@ eval "$(rbenv init - zsh)"
 # lazy git
 XDG_CONFIG_HOME="$HOME/.config"
 
-export JAVA_HOME="/Users/engeng/.sdkman/candidates/java/current"
 
 # rust
 export PATH=$PATH:$HOME/.cargo/bin
 
-if [ "$(arch)" = "arm64" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-else
-    eval "$(/usr/local/bin/brew shellenv)"
-    export PATH="/usr/local/opt/game-porting-toolkit-compiler/bin:$PATH"
-fi
+#if [ "$(arch)" = "arm64" ]; then
+#    eval "$(/opt/homebrew/bin/brew shellenv)"
+#else
+#    eval "$(/usr/local/bin/brew shellenv)"
+#    export PATH="/usr/local/opt/game-porting-toolkit-compiler/bin:$PATH"
+#fi
 
