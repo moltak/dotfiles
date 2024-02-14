@@ -74,7 +74,6 @@ brew "benbjohnson/litestream/litestream"
 cask "alt-tab"
 cask "android-file-transfer"
 cask "brave-browser"
-cask "bruno"
 cask "chromedriver"
 cask "dbeaver-community"
 cask "discord"
@@ -85,11 +84,9 @@ cask "framer"
 cask "hammerspoon"
 cask "handbrake"
 cask "heynote"
-cask "hiddenbar"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keycastr"
-cask "maccy"
 cask "microsoft-edge"
 cask "ngrok"
 cask "obs"
@@ -100,6 +97,24 @@ cask "sublime-text"
 cask "transmission"
 cask "vimr"
 cask "zoom"
+mas "Amphetamine", id: 937984704
+mas "Bitwarden", id: 1352778147
+mas "Developer", id: 640199958
+mas "Focus To-Do", id: 1258530160
+mas "HEIC image batch converter", id: 1566575751
+mas "Keynote", id: 409183694
+mas "Microsoft Word", id: 462054704
+mas "Monosnap", id: 540348655
+mas "Numbers", id: 409203825
+mas "Okta Verify", id: 490179405
+mas "Pages", id: 409201541
+mas "RunCat", id: 1429033973
+mas "Screen Cursor", id: 1577211880
+mas "Slack", id: 803453959
+mas "Xcode", id: 497799835
+mas "무비스트", id: 461788075
+mas "반디집", id: 1265704574
+mas "카카오톡", id: 869223134
 vscode "alefragnani.bookmarks"
 vscode "alefragnani.project-manager"
 vscode "alexcvzz.vscode-sqlite"
