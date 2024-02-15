@@ -2,6 +2,6 @@
 
 # brew
 ```bash
-brew cu -y # outdated brew package upgrade \
+brew cu -y # outdated brew package upgrade
 brew bundle dump -f # brew package list dump
 ```
