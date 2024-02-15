@@ -1,6 +1,7 @@
-제가 사용하는 dotfiles 설정들입니다.
-
+내 dotfiles 모음
 
 # brew
+```bash
 brew cu -y # outdated brew package upgrade \
 brew bundle dump -f # brew package list dump
+```
