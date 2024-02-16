@@ -98,7 +98,7 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   Plug 'neoclide/coc-tsserver'
   Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'vue', 'svelte', 'yaml', 'html'] }
 
 
   " html
@@ -259,12 +259,6 @@ augroup cursor_move_selected_word
     highlight CursorSelected001 ctermfg=14 ctermbg=23 guifg=#00ffff guibg=#005f5f
     highlight MatchParen ctermbg=red guibg=#8c709a
 augroup END
-
-"lua << EOF
-"require('hologram').setup{
-"    auto_display = true -- WIP automatic markdown image display, may be prone to breaking
-"}
-"EOF
 
 "* 설정 파일 include
 for include_file in uniq(sort(globpath(&rtp, 'vim-include/*.vim', 0, 1)))
