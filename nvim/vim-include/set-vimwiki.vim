@@ -7,7 +7,7 @@ let g:vim_wiki_set_path = expand('<sfile>:p:h')
 "1번 위키(공개용)와 2번 위키(개인용)
 let g:vimwiki_list = [
     \{
-    \   'path': '/Users/engeng/fun/moltak.github.io/_wiki',
+    \   'path': '/Users/engeng/fun/wiki/_wiki',
     \   'ext' : '.md',
     \   'diary_rel_path': '.',
     \},
@@ -20,7 +20,7 @@ let g:md_modify_disabled = 0
 
 " wiki에서 tab 설정이 겹쳐서 keybinding을 해제한다
 let g:vimwiki_key_mappings = { 
-  \ 'table_format': 0,
+  "\ 'table_format': 0,
   \ 'table_mappings': 0,
   \ }
 
