@@ -1,4 +1,7 @@
 call plug#begin('~/.vim/plugged')
+" wiki
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+
 Plug 'christoomey/vim-tmux-navigator'
 
 " One of following
@@ -64,9 +67,6 @@ Plug 'samodostal/image.nvim'
 "Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 "Plug 'fannheyward/telescope-coc.nvim'
 
-" wiki
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
-
 "Edit
   " easy align
   Plug 'junegunn/vim-easy-align'
@@ -93,7 +93,6 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
   "\ 'do': 'yarn install --frozen-lockfile --production',
   "\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'vue', 'svelte', 'yaml', 'html'] }
 
-
 " diff
 Plug 'sindrets/diffview.nvim'
 
@@ -109,6 +108,11 @@ Plug 'github/copilot.vim'
 Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
+
+"* 설정 파일 include
+for include_file in uniq(sort(globpath(&rtp, 'vim-include/*.vim', 0, 1)))
+    execute "source " . include_file
+endfor
 
 "colorscheme evening
 "colorscheme flatcolor-johngrib
@@ -223,12 +227,6 @@ augroup cursor_move_selected_word
     highlight CursorSelected001 ctermfg=14 ctermbg=23 guifg=#00ffff guibg=#005f5f
     highlight MatchParen ctermbg=red guibg=#8c709a
 augroup END
-
-"* 설정 파일 include
-for include_file in uniq(sort(globpath(&rtp, 'vim-include/*.vim', 0, 1)))
-    execute "source " . include_file
-    "echo include_file
-endfor
 
 let g:tagbar_ctags_bin = "/opt/homebrew/bin/ctags"
 let g:coc_node_path = "~/.nvm/versions/node/v16.15.1/bin/node"

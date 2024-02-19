@@ -18,6 +18,9 @@ let g:vimwiki_conceallevel = 0
 let g:vimwiki_table_mappings = 0
 let g:md_modify_disabled = 0
 
+" wiki에서 tab 설정이 겹쳐서 keybinding을 해제한다
+let g:vimwiki_key_mappings = { 'all_maps': 0, }
+
 " 자주 사용하는 vimwiki 명령어에 단축키를 취향대로 매핑해둔다
 command! WikiIndex :VimwikiIndex
 nmap <LocalLeader>ww <Plug>VimwikiIndex
@@ -34,6 +37,7 @@ nnoremap <S-F4> :execute "VWB" <Bar> :lopen<CR>
 " nmap <ESC> :lclose<CR>
 " CMD + s 로 파일 저장하기
 nnoremap <D-s> :w<CR>
+nnoremap <tab> <ignored>
 
 function! LastModified()
     if g:md_modify_disabled
@@ -99,4 +103,5 @@ augroup vimwikiauto
     autocmd BufRead,BufNewFile *wiki/*.md call NewTemplate()
     autocmd FileType *wiki*/*.md setlocal commentstring=#\ %s
 augroup END
+
 
