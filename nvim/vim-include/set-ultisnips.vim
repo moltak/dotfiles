@@ -1,6 +1,4 @@
-" ref: https://github.com/johngrib/dotfiles/blob/master/nvim/vim-include/set-ultisnips.vim
-let g:UltiSnipsExpandTrigger="<C-k>"
-let g:UltiSnipsJumpForwardTrigger="<Right>"
-let g:UltiSnipsJumpBackwardTrigger="<Left>"
+" key 설정은 set-coc 설정에서 함
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories = ['~/dotfiles/UltiSnips']
+

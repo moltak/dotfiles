@@ -18,9 +18,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'ctrlpvim/ctrlp.vim' " file buffer search
 
-" 비활성 윈도우 강조
-"Plug 'blueyed/vim-diminactive'
-
 " tpope
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -36,16 +33,12 @@ Plug 'luochen1990/rainbow'
 " snippet
 Plug 'SirVer/ultisnips'
 
-" ruby
-Plug 'tpope/vim-rails'
-
 " tags
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'preservim/tagbar'
 
 " theme
 Plug 'morhetz/gruvbox'
-Plug 'johngrib/FlatColor-johngrib'
 
 " chrome vim extension 처럼 커서 이동
 Plug 'easymotion/vim-easymotion'
@@ -66,10 +59,10 @@ Plug 'kamykn/popup-menu.nvim'
 Plug 'samodostal/image.nvim'
 
 " All the lua functions I don't want to write twice.
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-Plug 'fannheyward/telescope-coc.nvim'
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+"Plug 'nvim-lua/plenary.nvim'
+"Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+"Plug 'fannheyward/telescope-coc.nvim'
 
 " wiki
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
@@ -86,33 +79,20 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
 " language
   " Clojure
-  Plug 'liquidz/vim-iced', {'for': 'clojure'}
-  Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
+  "Plug 'liquidz/vim-iced', {'for': 'clojure'}
+  "Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 
   " Typescript
-  Plug 'pangloss/vim-javascript'    " JavaScript support
-  Plug 'leafgarland/typescript-vim' " TypeScript syntax
-  Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
-  Plug 'jparise/vim-graphql'        " GraphQL syntax
-  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-  Plug 'neoclide/coc-tsserver'
-  Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install --frozen-lockfile --production',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'vue', 'svelte', 'yaml', 'html'] }
+  "Plug 'pangloss/vim-javascript'    " JavaScript support
+  "Plug 'leafgarland/typescript-vim' " TypeScript syntax
+  "Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+  "Plug 'jparise/vim-graphql'        " GraphQL syntax
+  "Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  "Plug 'neoclide/coc-tsserver'
+  "Plug 'prettier/vim-prettier', {
+  "\ 'do': 'yarn install --frozen-lockfile --production',
+  "\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'vue', 'svelte', 'yaml', 'html'] }
 
-
-  " html
-  Plug 'alvan/vim-closetag'
-  Plug 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
-Plug 'cakebaker/scss-syntax.vim'
-
-  " dart
-  Plug 'dart-lang/dart-vim-plugin'
-  Plug 'thosakwe/vim-flutter'
-"Plug 'edluffy/hologram.nvim'
-
-  " rescript
-  Plug 'rescript-lang/vim-rescript'
 
 " diff
 Plug 'sindrets/diffview.nvim'
@@ -120,23 +100,11 @@ Plug 'sindrets/diffview.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 
 " git
-Plug 'tpope/vim-fugitive' " git command
-" Plug 'pwntester/octo.nvim'
-
-" terminal
-Plug 'preservim/vimux'
+"Plug 'tpope/vim-fugitive' " git command
+"Plug 'pwntester/octo.nvim'
 
 " copilot
 Plug 'github/copilot.vim'
-
-" elixir
-Plug 'elixir-editors/vim-elixir'
-Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
-
-" svelte
-Plug 'othree/html5.vim'
-Plug 'evanleck/vim-svelte', {'branch': 'main'}
-
 
 Plug 'liuchengxu/vim-which-key'
 
@@ -240,10 +208,6 @@ let g:airline#extensions#tabline#fnamemod = ':t' " vim-airline 버퍼 목록 파
 let g:airline#extensions#tabline#buffer_nr_show = 1 " buffer number 를 보여준다
 let g:airline#extensions#tabline#buffer_nr_format = '%s:' " buffer number format
 let g:airline_powerline_fonts = 1
-" let g:airline_left_sep = ''
-" let g:airline_left_alt_sep = ''
-" let g:airline_right_sep = ''
-" let g:airline_right_alt_sep = ''
 
 " rainbow
 let g:rainbow_active = 1
@@ -263,6 +227,7 @@ augroup END
 "* 설정 파일 include
 for include_file in uniq(sort(globpath(&rtp, 'vim-include/*.vim', 0, 1)))
     execute "source " . include_file
+    "echo include_file
 endfor
 
 let g:tagbar_ctags_bin = "/opt/homebrew/bin/ctags"
