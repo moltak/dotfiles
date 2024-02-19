@@ -19,7 +19,10 @@ let g:vimwiki_table_mappings = 0
 let g:md_modify_disabled = 0
 
 " wiki에서 tab 설정이 겹쳐서 keybinding을 해제한다
-let g:vimwiki_key_mappings = { 'all_maps': 0, }
+let g:vimwiki_key_mappings = { 
+  \ 'table_format': 0,
+  \ 'table_mappings': 0,
+  \ }
 
 " 자주 사용하는 vimwiki 명령어에 단축키를 취향대로 매핑해둔다
 command! WikiIndex :VimwikiIndex
