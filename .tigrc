@@ -1,6 +1,11 @@
+
+# binds
 # refs view에서 C를 누를 때, 확인 없이 checkout 되도록 변경
 bind refs C @git checkout %(branch) 
 
+# bind main C !read | xargs -I {} git checkout {}
+
 # main view 에서 commit id 가 출력되도록 설정
+# https://jonas.github.io/tig/doc/manual.html Prompt 섹션에 있는 :save-options 커맨드 참고
 set main-view                 = line-number:no,interval=5 id:yes,color=no date:default,local=no,format="%Y-%m-%d" author:full commit-title:yes,graph=v2,refs=yes
 
