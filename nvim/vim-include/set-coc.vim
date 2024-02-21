@@ -5,15 +5,15 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " no select by `"suggest.noselect": true` in your configuration file
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config
-inoremap <silent><expr> <tab>
+inoremap <silent><expr> <C-j>
       \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
+      \ CheckBackspace() ? "\<C-j>" :
       \ coc#refresh()
-inoremap <expr><s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <expr><C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
 
 " Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+inoremap <silent><expr> <C-l> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! CheckBackspace() abort
@@ -21,6 +21,12 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+
+" 아래 키는 안쓰이지만 tab을 override 하기 위해 설정
+let g:UltiSnipsExpandTrigger="<C-l>"
+imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
+imap <C-j> <plug>(copilot-next)
+imap <C-k> <Plug>(copilot-previous)
 
 "** 메뉴 Color
 " https://github.com/neoclide/coc.nvim/pull/3862
