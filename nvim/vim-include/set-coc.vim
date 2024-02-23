@@ -5,16 +5,15 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " no select by `"suggest.noselect": true` in your configuration file
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config
-inoremap <silent><expr> <C-j>
+inoremap <silent><expr> <tab>
       \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<C-j>" :
+      \ CheckBackspace() ? "\<tab>" :
       \ coc#refresh()
-inoremap <expr><C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
+inoremap <expr><C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<s-tab>"
 
 " Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice
-inoremap <silent><expr> <C-l> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <C-CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<C-CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! CheckBackspace() abort
   let col = col('.') - 1
@@ -23,10 +22,14 @@ endfunction
 
 
 " 아래 키는 안쓰이지만 tab을 override 하기 위해 설정
-let g:UltiSnipsExpandTrigger="<C-l>"
+let g:UltiSnipsExpandTrigger="<C-;>"
+"let g:UltiSnipsListSnippets="<c-tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-j>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+"let g:UltiSnipsExpandOrJumpTrigger="<tab>"
 imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
-imap <C-j> <plug>(copilot-next)
-imap <C-k> <Plug>(copilot-previous)
+imap <C-j> <Plug>(copilot-previous)
+imap <C-k> <plug>(copilot-next)
 
 "** 메뉴 Color
 " https://github.com/neoclide/coc.nvim/pull/3862
