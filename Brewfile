@@ -8,7 +8,9 @@ tap "gcenx/apple"
 tap "gcenx/wine"
 tap "heroku/brew"
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/core"
 tap "homebrew/services"
 tap "thezoraiz/ascii-image-converter"
 tap "universal-ctags/universal-ctags"
@@ -40,6 +42,7 @@ brew "lazydocker"
 brew "lazygit"
 brew "lefthook"
 brew "leiningen"
+brew "libpq", link: true
 brew "liquibase"
 brew "mas"
 brew "maven"
@@ -100,6 +103,7 @@ cask "vimr"
 cask "zoom"
 mas "Amphetamine", id: 937984704
 mas "Bitwarden", id: 1352778147
+mas "Color Picker Plus", id: 1499052260
 mas "Developer", id: 640199958
 mas "Focus To-Do", id: 1258530160
 mas "HEIC image batch converter", id: 1566575751

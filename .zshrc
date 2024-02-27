@@ -75,3 +75,4 @@ export PATH=$PATH:$HOME/.cargo/bin
 #    export PATH="/usr/local/opt/game-porting-toolkit-compiler/bin:$PATH"
 #fi
 
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
