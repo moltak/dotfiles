@@ -76,3 +76,14 @@ export PATH=$PATH:$HOME/.cargo/bin
 #fi
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# git
+#alias git-grep="f() { git log --grep $1 | xargs -I {} echo {} };f"
+
+function git-grep() {
+  git log --grep $1 develop | xargs -I {} echo {}
+}
+
+function git-grep-and-then-copy-hash() {
+  git log --grep $1 develop | head -n 1 | awk '{print $2}' | pbcopy | pbpaste
+}
