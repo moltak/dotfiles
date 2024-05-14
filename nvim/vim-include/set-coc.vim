@@ -52,7 +52,8 @@ let g:coc_global_extensions = [
             \ 'coc-tsserver',
             \ 'coc-json',
             \ 'coc-clangd',
-            \ 'coc-copilot'
+            \ 'coc-copilot',
+            \ 'coc-solargraph'
             \]
 
 " coc_explorer

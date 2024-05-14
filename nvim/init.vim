@@ -2,15 +2,9 @@ call plug#begin('~/.vim/plugged')
 " wiki
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 
-Plug 'christoomey/vim-tmux-navigator'
-
-" One of following
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf'
-
-" Requires
-Plug 'guns/vim-sexp',    {'for': 'clojure'}
 
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -58,9 +52,6 @@ Plug 'kamykn/popup-menu.nvim'
   " vim window resize
   Plug 'simeji/winresizer'
 
-" image.vim
-Plug 'samodostal/image.nvim'
-
 " All the lua functions I don't want to write twice.
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "Plug 'nvim-lua/plenary.nvim'
@@ -72,40 +63,20 @@ Plug 'samodostal/image.nvim'
   Plug 'junegunn/vim-easy-align'
   Plug 'junegunn/vim-xmark', { 'do': 'make' }
 
-" Util
-"terminal
-"Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
-
-
-" language
-  " Clojure
-  "Plug 'liquidz/vim-iced', {'for': 'clojure'}
-  "Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
-
-  " Typescript
-  "Plug 'pangloss/vim-javascript'    " JavaScript support
-  "Plug 'leafgarland/typescript-vim' " TypeScript syntax
-  "Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
-  "Plug 'jparise/vim-graphql'        " GraphQL syntax
-  "Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-  "Plug 'neoclide/coc-tsserver'
-  "Plug 'prettier/vim-prettier', {
-  "\ 'do': 'yarn install --frozen-lockfile --production',
-  "\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'vue', 'svelte', 'yaml', 'html'] }
 
 " diff
 Plug 'sindrets/diffview.nvim'
 
 Plug 'nvim-tree/nvim-web-devicons'
 
-" git
-"Plug 'tpope/vim-fugitive' " git command
-"Plug 'pwntester/octo.nvim'
-
 " copilot
 Plug 'github/copilot.vim'
 
 Plug 'liuchengxu/vim-which-key'
+
+" ruby
+Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
@@ -230,3 +201,6 @@ augroup END
 
 let g:tagbar_ctags_bin = "/opt/homebrew/bin/ctags"
 let g:coc_node_path = "~/.nvm/versions/node/v16.15.1/bin/node"
+
+" repeat.vim
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
