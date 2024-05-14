@@ -7,6 +7,9 @@ export PATH=$PATH:"$HOME/.pub-cache/bin"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:~/.vim/plugged/vim-iced/bin
 
+export LC_ALL="C.UTF-8"
+export LANG="C.UTF-8"
+
 ZSH_THEME="simple"
 
 plugins=(
@@ -32,12 +35,12 @@ alias vimdiff="nvim -d"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(fasd --init auto)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -87,3 +90,13 @@ function git-grep() {
 function git-grep-and-then-copy-hash() {
   git log --grep $1 develop | head -n 1 | awk '{print $2}' | pbcopy | pbpaste
 }
+
+
+# PATH
+PATH=$PATH:/snap/bin
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export FLYCTL_INSTALL="/home/kh/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"

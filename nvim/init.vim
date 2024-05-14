@@ -74,7 +74,7 @@ Plug 'samodostal/image.nvim'
 
 " Util
 "terminal
-Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+"Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
 
 " language
@@ -141,7 +141,7 @@ set cursorcolumn
 xmap =f <Plug>(EasyAlign)
 nmap =f <Plug>(EasyAlign)
 
-let g:python3_host_prog= '/opt/homebrew/bin/python3'
+let g:python3_host_prog= '/usr/bin/python3'
 
 " 편집한 값들은 한 단계 인덴트를 오른쪽으로 당겼음
 let g:sexp_mappings = {
