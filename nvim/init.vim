@@ -112,7 +112,12 @@ set cursorcolumn
 xmap =f <Plug>(EasyAlign)
 nmap =f <Plug>(EasyAlign)
 
-let g:python3_host_prog= '/usr/bin/python3'
+" Python3 호스트 프로그램 경로를 동적으로 설정
+function! GetPython3HostProg()
+    let l:python3_host_prog = system('which python3')
+    return substitute(l:python3_host_prog, '\n', '', 'g')
+endfunction
+let g:python3_host_prog = GetPython3HostProg()
 
 " 편집한 값들은 한 단계 인덴트를 오른쪽으로 당겼음
 let g:sexp_mappings = {
