@@ -7,8 +7,14 @@ export PATH=$PATH:"$HOME/.pub-cache/bin"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:~/.vim/plugged/vim-iced/bin
 
-export LC_ALL="C.UTF-8"
-export LANG="C.UTF-8"
+# 우분투일경우 LANG을 설정
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    if [ "$ID" = "ubuntu" ]; then
+        export LC_ALL="C.UTF-8"
+        export LANG="C.UTF-8"
+    fi
+fi
 
 ZSH_THEME="simple"
 
