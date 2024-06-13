@@ -37,7 +37,7 @@ eval "$(fasd --init auto)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # android
-export ANDROID_SDK="/Users/engeng/Library/Android/sdk"
+export ANDROID_SDK="$HOME/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin
 
 # serverless-better-credentials
@@ -46,7 +46,7 @@ export AWS_SDK_LOAD_CONFIG=1
 # sdkman
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-export JAVA_HOME="/Users/engeng/.sdkman/candidates/java/current"
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 
 # alias
 # Example aliases
@@ -79,5 +79,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # fly
-export FLYCTL_INSTALL="/home/kh/.fly"
+export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
