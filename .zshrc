@@ -3,6 +3,7 @@ export PATH=$PATH:"$HOME/.pub-cache/bin"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/snap/bin
 eval "$(/opt/homebrew/bin/brew shellenv)"
+#source $ZSH/oh-my-zsh.sh
 
 ZSH_THEME="simple"
 
@@ -12,8 +13,6 @@ plugins=(
   fasd
   aws
 )
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
@@ -56,14 +55,13 @@ export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 # git
 #alias git-grep="f() { git log --grep $1 | xargs -I {} echo {} };f"
 
-function git-grep() {
-  git log --grep $1 develop | xargs -I {} echo {}
-}
-
-function git-grep-and-then-copy-hash() {
-  git log --grep $1 develop | head -n 1 | awk '{print $2}' | pbcopy | pbpaste
-}
-
+#function git-grep() {
+#  git log --grep $1 develop | xargs -I {} echo {}
+#}
+#
+#function git-grep-and-then-copy-hash() {
+#  git log --grep $1 develop | head -n 1 | awk '{print $2}' | pbcopy | pbpaste
+#}
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -75,12 +73,6 @@ export NVM_DIR="$HOME/.nvm"
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# rbenv (ruby)
-#eval "$(rbenv init - zsh)"
-#export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
 # fly
 export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
-export PATH="/opt/homebrew/bin:$PATH"
