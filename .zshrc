@@ -31,9 +31,7 @@ else
     export LANG=en_US.UTF-8
 fi
 
-
 eval "$(fasd --init auto)"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # android
 export ANDROID_SDK="$HOME/Library/Android/sdk"
@@ -77,3 +75,6 @@ export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
+
+#eval "$(fzf --bash)"
+source <(fzf --zsh)
