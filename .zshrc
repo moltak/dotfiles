@@ -1,5 +1,9 @@
 # PATH
+export FLUTTER_BIN="$HOME/sdk/flutter/bin"
+export PATH=$PATH:$FLUTTER_BIN
 export PATH=$PATH:"$HOME/.pub-cache/bin"
+export PATH=$PATH:"$HOME/bin"
+
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/snap/bin
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -70,11 +74,5 @@ export NVM_DIR="$HOME/.nvm"
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# fly
-export FLYCTL_INSTALL="$HOME/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
 source $ZSH/oh-my-zsh.sh
-
-#eval "$(fzf --bash)"
 source <(fzf --zsh)
