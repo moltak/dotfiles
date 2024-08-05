@@ -78,6 +78,8 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'tpope/vim-rails'
 Plug 'vim-ruby/vim-ruby'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 "* 설정 파일 include
