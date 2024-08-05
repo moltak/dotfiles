@@ -200,7 +200,9 @@ augroup cursor_move_selected_word
 augroup END
 
 let g:tagbar_ctags_bin = "/opt/homebrew/bin/ctags"
-let g:coc_node_path = "~/.nvm/versions/node/v16.15.1/bin/node"
 
 " repeat.vim
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
+let g:coc_node_path = "/usr/local/bin/node"
