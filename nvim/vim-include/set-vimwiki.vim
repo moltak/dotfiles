@@ -7,10 +7,10 @@ let g:vim_wiki_set_path = expand('<sfile>:p:h')
 "1번 위키(공개용)와 2번 위키(개인용)
 let g:vimwiki_list = [
     \{
-    \   'path': '/Users/engeng/fun/wiki/_wiki',
+    \   'path': '/Users/kh/fun/wiki/_wiki',
     \   'ext' : '.md',
     \   'diary_rel_path': '.',
-    \},
+    \}
 \]
 
 " vimwiki의 conceallevel 을 끄는 쪽이 좋다
