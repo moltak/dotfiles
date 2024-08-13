@@ -80,6 +80,10 @@ Plug 'vim-ruby/vim-ruby'
 
 Plug 'christoomey/vim-tmux-navigator'
 
+" JS
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'yuezk/vim-js'
+
 call plug#end()
 
 "* 설정 파일 include
