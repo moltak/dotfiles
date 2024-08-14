@@ -78,7 +78,7 @@ function! NewTemplate()
 
     let l:template = []
     call add(l:template, '---')
-    call add(l:template, 'layout  : wiki')
+    call add(l:template, 'layout  : post')
     call add(l:template, 'title   : ')
     call add(l:template, 'summary : ')
     call add(l:template, 'date    : ' . strftime('%Y-%m-%d %H:%M:%S +0900'))
