@@ -14,6 +14,7 @@
   update-index-assume = update-index --assume-unchanged
   update-index-no-assume = update-index --no-assume-unchanged
   update-index-really-refresh = update-index --really-refresh
+  show-alias = "!sed -n '/\\[alias\\]/,/^\\[.*\\]/p' ~/.gitconfig | grep -v '^\\[' | sed 's/^  //'"
 
 [core]
   editor = nvim
@@ -34,3 +35,9 @@
 [mergetool "intellij"]
         cmd = /Applications/IntelliJ\\ IDEA.app/Contents/MacOS/idea merge $(cd $(dirname \"$LOCAL\") && pwd)/$(basename \"$LOCAL\") $(cd $(dirname \"$REMOTE\") && pwd)/$(basename \"$REMOTE\") $(cd $(dirname \"$BASE\") && pwd)/$(basename \"$BASE\") $(cd $(dirname \"$MERGED\") && pwd)/$(basename \"$MERGED\")
         trustExitCode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
