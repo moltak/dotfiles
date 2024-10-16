@@ -15,6 +15,7 @@
   update-index-no-assume = update-index --no-assume-unchanged
   update-index-really-refresh = update-index --really-refresh
   show-alias = "!sed -n '/\\[alias\\]/,/^\\[.*\\]/p' ~/.gitconfig | grep -v '^\\[' | sed 's/^  //'"
+  show-hash = !"git log --pretty=format:"%H" -n 1|grep -v grep|cut -c 1-10|xargs echo $(git rev-parse --abbrev-ref HEAD|cut -c 1-3)"
 
 [core]
   editor = nvim
