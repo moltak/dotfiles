@@ -1,6 +1,6 @@
 [user]
 	name = KyungHo Jung
-  email = moltak@gmail.com
+	email = moltak@gmail.com
 
 [alias]
   graph = log --graph --date-order -C -M --pretty=format:\"%C(blue)%h%C(reset) (%ar) [%an] %C(yellow)%d%Creset %s\" --all --date=short
@@ -42,3 +42,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[commit]
+	template = /Users/engeng/.stCommitMsg

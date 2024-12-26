@@ -3,6 +3,9 @@
 # refs view에서 C를 누를 때, 확인 없이 checkout 되도록 변경
 bind refs C @git checkout %(branch) 
 
+# main view에서 C를 누를 때, 확인 없이 checkout 되도록 변경
+bind main S @git checkout %(branch) 
+
 # bind main C !read | xargs -I {} git checkout {}
 
 # main view 에서 commit id 가 출력되도록 설정
