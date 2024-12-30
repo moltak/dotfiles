@@ -19,7 +19,7 @@
 
 [core]
   editor = nvim
-	excludesfile = /Users/engeng/.gitignore
+	excludesfile = ~/.gitignore
 [init]
   defaultBranch = main
 [filter "lfs"]
@@ -43,4 +43,4 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/engeng/.stCommitMsg
+	template = ~/.stCommitMsg
