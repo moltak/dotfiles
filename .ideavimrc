@@ -1,4 +1,11 @@
+" ideavimextension plugin
 set keep-english-in-normal enable auto-switch feature
 set keep-english-in-normal-and-restore-in-insert restore input method when return insert mode.
 set nokeep-english-in-normal-and-restore-in-insert keep auto-switch feature, but doesn't restore input method when return insert mode
 set nokeep-english-in-normal disable auto-switch feature
+
+
+" intellij easymotion plugin
+let mapleader="s"
+set easymotion
+
