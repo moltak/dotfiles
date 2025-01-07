@@ -31,8 +31,8 @@ Plug 'luochen1990/rainbow'
 Plug 'SirVer/ultisnips'
 
 " tags
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'preservim/tagbar'
+"Plug 'ludovicchabant/vim-gutentags'
+"Plug 'preservim/tagbar'
 
 " theme
 Plug 'morhetz/gruvbox'
