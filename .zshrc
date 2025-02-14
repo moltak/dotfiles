@@ -75,3 +75,6 @@ source <(fzf --zsh)
 # rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# cargo
+$HOME/.cargo/env
