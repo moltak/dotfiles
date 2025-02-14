@@ -73,8 +73,8 @@ source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 
 # rbenv
-PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 # cargo
 $HOME/.cargo/env
