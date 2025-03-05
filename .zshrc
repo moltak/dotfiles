@@ -50,19 +50,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 
 # alias
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# git
-#alias git-grep="f() { git log --grep $1 | xargs -I {} echo {} };f"
-
-#function git-grep() {
-#  git log --grep $1 develop | xargs -I {} echo {}
-#}
-#
-#function git-grep-and-then-copy-hash() {
-#  git log --grep $1 develop | head -n 1 | awk '{print $2}' | pbcopy | pbpaste
-#}
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -77,4 +66,26 @@ source <(fzf --zsh)
 #eval "$(rbenv init -)"
 
 # cargo
-$HOME/.cargo/env
+#$HOME/.cargo/env
+
+# Created by `pipx` on 2025-03-04 02:23:10
+export PATH="$PATH:/Users/clark/.local/bin"
+
+
+eval "$(register-python-argcomplete pipx)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/clark/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/clark/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/clark/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/clark/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
