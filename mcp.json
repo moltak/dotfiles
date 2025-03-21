@@ -1,0 +1,28 @@
+{
+    "mcpServers": {
+      "server-sequential-thinking": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@smithery/cli@latest",
+          "run",
+          "@smithery-ai/server-sequential-thinking",
+          "--config",
+          "\"{}\""
+        ]
+      },
+      "browser-tools-mcp": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@agentdeskai/browser-tools-mcp"
+        ]
+      },
+      "TalkToFigma": {
+        "command": "bun",
+        "args": [
+            "/Users/kh/fun/tools/cursor-talk-to-figma-mcp/src/talk_to_figma_mcp/server.ts"
+        ]
+      }
+    }
+  }

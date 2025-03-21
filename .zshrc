@@ -76,16 +76,27 @@ eval "$(register-python-argcomplete pipx)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/clark/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/kh/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/clark/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/clark/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/kh/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/kh/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/clark/anaconda3/bin:$PATH"
+        export PATH="/Users/kh/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# bun completions
+[ -s "/Users/kh/.bun/_bun" ] && source "/Users/kh/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
