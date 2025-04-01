@@ -8,6 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/snap/bin
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+export EDITOR='nvim'
+
 ZSH_THEME="simple"
 
 plugins=(
