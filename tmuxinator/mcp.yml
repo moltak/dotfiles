@@ -1,15 +1,11 @@
-# /Users/clark/.config/tmuxinator/mcp.yml
-
 name: mcp
 root: ~/fun/tools
 
-# Optional tmux socket
 socket_name: mcp
 
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 # startup_pane: 1
 
-# Controls whether the tmux session should be attached to automatically. Defaults to true.
 attach: false
 
 windows:
