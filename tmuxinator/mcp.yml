@@ -19,7 +19,8 @@ windows:
           - cd cursor-talk-to-figma-mcp
           - bun socket
         - 
-          - echo "This pane is empty for now"
+          - cd ~/fun/business/markai
+          - npx prisma studio
         - 
           - cd cursor-talk-to-figma-mcp
           - bunx cursor-talk-to-figma-mcp
