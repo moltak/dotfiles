@@ -20,7 +20,7 @@ windows:
           - bun socket
         - 
           - cd ~/fun/business/markai
-          - npx prisma studio
+          - npx drizzle-kit studio --config drizzle.config.local.ts
         - 
           - cd cursor-talk-to-figma-mcp
           - bunx cursor-talk-to-figma-mcp
