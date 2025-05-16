@@ -2,14 +2,7 @@
   "mcpServers": {
     "server-sequential-thinking": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@smithery/cli@latest",
-        "run",
-        "@smithery-ai/server-sequential-thinking",
-        "--config",
-        "\"{}\""
-      ]
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
     },
     "browser-tools-mcp": {
       "command": "npx",
@@ -20,6 +13,10 @@
       "args": [
         "~/fun/tools/cursor-talk-to-figma-mcp/src/talk_to_figma_mcp/server.ts"
       ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
     }
   }
 }
